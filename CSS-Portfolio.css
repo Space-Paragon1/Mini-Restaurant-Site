@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: coral;
+    padding: 10px;
+    color:black;
+    text-align: center;
+    border-radius: 65px;
+  }
+  
+  /* Style the top navigation bar */
+  ul {
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: brown;
+  }
+  
+  li {
+      float:left;
+  }
+  
+  /* Style the topnav links */
+  li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  li a:hover {
+    background-color: orangered;
+  }
+
+  .active {
+    background-color: blue;
+    }
+
+    .text {
+        float: right;
+        text-align: right;
+        color: black;
+        font-size: 20px;
+
+    }
+
+ .flex-container  {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 300px;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+}
+
+.flex-container> div{
+    background-color: chartreuse;
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100%;
+    font-size: 30px;
+    flex-grow: 10;
+    border-radius: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover{
+   background-color: deeppink;
+}
+
+.img{
+    float: right;
+}
+
+.footer {
+    background-color: coral;
+    padding: 100px;
+    height: 100%;
+    text-align: center;
+    border: 5px solid pink;
+    border-radius: 35px;
+  }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:100px) {
+    .column {
+      width: 100%;
+    }
+}
